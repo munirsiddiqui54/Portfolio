@@ -8,6 +8,7 @@ import Social from './Layouts/Social/Social';
 import Skills from './Layouts/Skills/Skills';
 import Projects from './Layouts/Projects/Projects';
 import Contact from './Layouts/Contact/Contact';
+import Footer from './Layouts/Footer/Footer';
 
 function App() {
   const mouseFollower = useRef();
@@ -68,6 +69,7 @@ function App() {
       <Skills/>
       <Projects/>
       <Contact/>
+      <Footer/>
       <div
         ref={mouseFollower}
         className="mouse__follower"

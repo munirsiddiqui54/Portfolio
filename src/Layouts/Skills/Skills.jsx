@@ -128,7 +128,7 @@ const Skills = () => {
           ))}
         </div>
       </div>
-      <div
+      {/* <div
         class="custom-shape-divider-bottom-1707313518"
         style={{ marginBottom: "-2px" }}
       >
@@ -153,7 +153,7 @@ const Skills = () => {
             class="shape-fill"
           ></path>
         </svg>
-      </div>
+      </div> */}
     </>
   );
 };

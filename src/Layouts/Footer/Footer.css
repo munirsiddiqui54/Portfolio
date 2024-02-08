@@ -1,0 +1,16 @@
+.credits{
+    border-top: 1px solid white;
+}
+
+.footer{
+    background-color: #282727;
+    font-family: "Poppins";
+}
+
+.footer h3{
+    font-weight: 600;
+    font-size: 35px;
+}
+.profile p{
+    text-align: start;
+}

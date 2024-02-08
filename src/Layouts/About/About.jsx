@@ -53,16 +53,6 @@ const about = () => {
             innovation drives me to constantly seek new challenges and push the
             boundaries of what's possible in the realm of software engineering
           </p>
-          <div
-            class="bubble m-0"
-            style={{ position: "absolute", width: "100px", height: "100px" }}
-          >
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
         </div>
       </div>
     </div>

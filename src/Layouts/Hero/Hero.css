@@ -1,0 +1,195 @@
+.hero .heading {
+    font-size: 100px;
+    font-weight: 800;
+    font-family: "Poppins";
+    color: white;
+}
+
+/* purple #ca49b4 */
+/* blue #5662ea; */
+
+.gradtext {
+    background-image: linear-gradient(to right,#ca49b4, #5662ea);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero .greet {
+    font-family: "Poppins";
+    margin: 0px;
+    font-size: 24px;
+}
+
+.hero .description {
+    font-size: 18px;
+    width: 100vh;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 160px;
+    margin-bottom: 50px;
+}
+
+.custom-shape-divider-bottom-1707313518 {
+    /* position: absolute; */
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1707313518 svg {
+    /* position: relative; */
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 99px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1707313518 .shape-fill {
+    fill: #2a2929;
+}
+
+.btn{
+    border: 0.05px solid white;
+    color: white;
+    margin:10px;
+    font-size: 15px;
+    box-shadow: 0 8px 32px 0 #5662ea50;
+    backdrop-filter: blur(7px);
+    font-family: 'Poppins';
+}
+
+#btn1{
+    background-color: #ca49b4;
+    border: 0.05px solid white;
+}
+
+#btn2{
+    background-color: black;
+    -webkit-backdrop-filter: blur(7px);
+}
+
+#btn2:hover{
+    border: 0.05px solid white;
+    background-color:#5662ea;;
+    transition: all 1s;
+}
+
+.bubble {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    box-shadow: inset 0 0 25px rgba (255, 255, 255, 0.25);
+    animation: animate_4010 8s ease-in-out infinite;
+  }
+  
+  
+.bubble:nth-child(2) {
+    position: relative;
+    zoom: 0.45;
+    bottom: 0px;
+    right: 0px;
+    animation-delay: -4s;
+  }
+  
+  .bubble:nth-child(3) {
+    position: relative;
+    zoom: 0.35;
+    right: 0px;
+    top: -200px;
+    animation-delay: -6s;
+  }
+  
+  .bubble:nth-child(4) {
+    position: relative;
+    zoom: 0.35;
+    right: 0px;
+    bottom: 0px;
+    animation-delay: -3s;
+  }
+  
+  .bubble:nth-child(5) {
+    position: relative;
+    zoom: 0.5;
+    top: 200px;
+    animation-delay: -5s;
+  }
+  
+  @keyframes animate_4010 {
+    0%,100% {
+      transform: translateY(-20px);
+    }
+  
+    50% {
+      transform: translateY(20px);
+    }
+  }
+  
+  .bubble::before {
+    content: '';
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #fff;
+    z-index: 10;
+    filter: blur(2px);
+  }
+  
+  .bubble::after {
+    content: '';
+    position: absolute;
+    top: 80px;
+    right: 80px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #fff;
+    z-index: 10;
+    filter: blur(2px);
+  }
+  
+  .bubble span {
+    position: absolute;
+    border-radius: 50%;
+  }
+  
+  .bubble span:nth-child(1) {
+    inset: 10px;
+    border-left: 15px solid #5662ea;;
+    filter: blur(8px);
+  }
+  
+  .bubble span:nth-child(2) {
+    inset: 10px;
+    border-right: 15px solid #ca49b4;
+    filter: blur(8px);
+  }
+  
+  .bubble span:nth-child(3) {
+    inset: 10px;
+    border-top: 15px solid #ffeb3b;
+    filter: blur(8px);
+  }
+  
+  .bubble span:nth-child(4) {
+    inset: 30px;
+    border-left: 15px solid #ca49b4;
+    filter: blur(12px);
+  }
+  
+  .bubble span:nth-child(5) {
+    inset: 10px;
+    border-bottom: 10px solid #fff;
+    filter: blur(8px);
+    transform: rotate(330deg);
+  }

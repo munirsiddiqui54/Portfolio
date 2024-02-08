@@ -32,7 +32,19 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+.mouse__follower {
+  background-color: rgb(97, 62, 222);
+  width: 100px;
+  height: 100px;
+  filter: blur(70px);
+  border-radius: 100%;
+  position: absolute;
+  transition: all ease 0.4s;
+  z-index: -1;
 }

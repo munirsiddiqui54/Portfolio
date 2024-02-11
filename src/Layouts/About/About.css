@@ -80,3 +80,49 @@
     top:0; 
     animation: zoom 4s reverse infinite; 
 }
+
+.myabout{
+    display:flex ;
+    flex-direction: row;
+}
+
+.abt1,.abt2{
+    width: 45%;
+}
+
+.abt2{
+    flex-direction: column;
+}
+@media only screen and (max-width: 768px) {
+    /* Styles for phones */
+
+    *{
+        height: fit-content;
+    }
+    .about{
+        padding: 0px;
+        width: 95%;
+    }
+    .myabout{
+        flex-direction: column;
+    }
+    .abt1,.abt2{
+        width: 100%;
+    }
+    .about h2{
+        font-size: 30px;
+    }
+    .about p{
+        font-size: 14px;
+    }
+  }
+  
+  /* For tablets (portrait and landscape) */
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    /* Styles for tablets */
+  }
+  
+  /* For laptops and desktops */
+  @media only screen and (min-width: 1025px) {
+    /* Styles for laptops and desktops */
+  }

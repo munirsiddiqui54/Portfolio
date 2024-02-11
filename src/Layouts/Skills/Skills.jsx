@@ -95,12 +95,15 @@ const Skills = () => {
           So, <span className="gradtext">what</span> I know
         </h2>
         <div
-          className="d-flex my-4"
-          style={{ flexWrap: "wrap", justifyContent: "space-between" }}
+          className="d-flex my-4 skill_container"
+          style={{
+            flexWrap: "wrap",
+            justifyContent: "space-between",
+          }}
         >
           {Myskills?.map((a) => (
             <div class="mycard m-2">
-              <div class="mycard2 p-2">
+              <div class="mycard2 ">
                 <h5
                   className="m-2"
                   style={{
@@ -113,13 +116,8 @@ const Skills = () => {
                   {a.domain}
                 </h5>
                 {a.skills.map((s) => (
-                  <div className="d-flex m-1 p-1 box">
-                    <img
-                      src={s.img}
-                      alt="skill"
-                      style={{ width: "50px" }}
-                      className="m-2"
-                    />
+                  <div className="d-flex box">
+                    <img src={s.img} alt="skill" className="m-2" />
                     <p className="m-0">{s.skill}</p>
                   </div>
                 ))}

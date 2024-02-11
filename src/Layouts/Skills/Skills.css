@@ -56,4 +56,48 @@
    .mycard{
     box-shadow: 0px 0px 30px 1px #ed94de25;
    }
+   .mycard2{
+    padding: 5px;
+   }
+   .box img{
+    width: 50px;
+   }
+   .box{
+    margin: 5px;
+    padding: 2px;
+   }
+   @media only screen and (max-width: 768px) {
+    /* Styles for phones */
+    .skills h2{
+        font-size: 30px;
+    }
 
+    .box{
+        margin: 2px;
+        /* margin-left: 2px; */
+       }
+    .box img{
+        width: 35px;
+    }
+    .box p{
+        font-size: 14px;
+        font-weight: 300;
+    }
+    .skills{
+        padding: 0px;
+        width: 100%;
+        margin: 0px;
+    }
+    .skill_container{
+        width: 98%;
+        align-items: end;
+    }
+
+    .mycard{
+        width: 45%;
+    }
+    .mycard2{
+        width: 100%;
+        padding: 0px;
+    }
+   }

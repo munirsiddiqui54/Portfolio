@@ -148,3 +148,26 @@
 		transform: translatey(0px);
 	}
 }
+.main{
+  margin-left: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+  /* Styles for phones */
+  .social{
+    position: static;
+    flex-direction: row;
+  }
+  .main{
+    flex-direction: row-reverse;
+    justify-content: center;
+    margin: 0px;
+    margin-top: 30px;
+  }
+
+  .card1,.card2,.card3,.card4{
+    width: 50px;
+    height: 50px;
+  }
+
+}

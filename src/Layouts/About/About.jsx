@@ -10,8 +10,8 @@ const about = () => {
         <h5 className="gradtext mx-2">/ </h5>
         <h5> ABOUT ME</h5>
       </span>
-      <div className="d-flex" style={{ justifyContent: "space-between" }}>
-        <div style={{ width: "45%", position: "relative" }}>
+      <div className="myabout" style={{ justifyContent: "space-between" }}>
+        <div className="abt1" style={{ position: "relative" }}>
           <img src={img2} className="blob3" style={{ width: "150px" }} />
           <h2>
             2 years of <span className="gradtext">crafting</span> digital
@@ -26,7 +26,7 @@ const about = () => {
           </p>
           <img src={img} className="blob4" style={{ width: "150px" }} />
         </div>
-        <div className="abt2" style={{ width: "45%" }}>
+        <div className="abt2 myabout">
           <img src={img} className="blob" style={{ width: "100px" }} />
           <div
             className="d-flex"

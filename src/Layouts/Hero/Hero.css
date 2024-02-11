@@ -196,7 +196,13 @@
  
   @media only screen and (max-width: 768px) {
     /* Styles for phones */
-
+    .mouse__follower {
+display: none;
+    }
+    .btn{
+      margin: 3px;
+      font-size: 14px;
+    }
     .hero .heading {
       font-size: 35px;
     }

@@ -35,3 +35,17 @@
     fill: #282727;
 }
     
+
+@media only screen and (max-width: 768px) {
+    .custom-shape-divider-bottom-1707409779{
+        display:none;
+    }
+    /* Styles for phones */
+    .contact h2{
+        font-size: 25px;
+        font-weight: 500;
+    }
+    .contact h5{
+        font-size: 16px;
+    }
+}

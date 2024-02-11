@@ -94,7 +94,14 @@ const Hero = () => {
           development and a burgeoning interest in app development. Currently
           immersing myself in the realm of machine learning
         </p>
-        <div>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            width: "100%",
+          }}
+        >
           <button className="btn" id="btn1">
             <a
               href="#contact"

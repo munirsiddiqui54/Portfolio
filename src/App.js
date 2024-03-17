@@ -9,7 +9,6 @@ import Skills from './Layouts/Skills/Skills';
 import Projects from './Layouts/Projects/Projects';
 import Contact from './Layouts/Contact/Contact';
 import Footer from './Layouts/Footer/Footer';
-
 function App() {
   const mouseFollower = useRef();
 

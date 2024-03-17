@@ -1,5 +1,6 @@
 import React from "react";
 import "./Footer.css";
+import Social from "../Social/Social";
 
 const Footer = () => {
   return (
@@ -12,9 +13,10 @@ const Footer = () => {
       >
         <div className="profile">
           <img src="" />
-          <div>
+          <div style={{ height: "220px" }}>
             <h3>Munir Siddiqui</h3>
-            <p>xyz</p>
+            <p>Software Developer</p>
+            <Social align={1} />
           </div>
         </div>
         <div>

@@ -8,25 +8,38 @@ const Contact = (contact) => {
         <div className="container">
           <span className="d-flex">
             <h5 className="gradtext mx-2">/</h5>
-            <h5>Contact Me</h5>
+            <h5>CONTACT ME</h5>
           </span>
           <h2>
             Let's <span className="gradtext">start</span> a conversation
           </h2>
+          <div className="form-container">
+            <form className="form">
+              <div className="form-group">
+                <label htmlFor="name">Your Name</label>
+                <input type="text" id="name" name="name" required />
+              </div>
+              <div className="form-group">
+                <label htmlFor="email">Email</label>
+                <input type="text" id="email" name="email" required />
+              </div>
+              <div className="form-group">
+                <label htmlFor="textarea">Send me a Message</label>
+                <textarea
+                  name="textarea"
+                  id="textarea"
+                  rows={10}
+                  cols={50}
+                  required
+                  defaultValue={"          "}
+                />
+              </div>
+              <button className="form-submit-btn" type="submit">
+                Submit
+              </button>
+            </form>
+          </div>
         </div>
-      </div>
-      <div className="custom-shape-divider-bottom-1707409779">
-        <svg
-          data-name="Layer 1"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 1200 120"
-          preserveAspectRatio="none"
-        >
-          <path
-            d="M0,0V7.23C0,65.52,268.63,112.77,600,112.77S1200,65.52,1200,7.23V0Z"
-            className="shape-fill"
-          />
-        </svg>
       </div>
     </div>
   );

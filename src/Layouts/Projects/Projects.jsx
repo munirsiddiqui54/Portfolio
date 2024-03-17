@@ -1,10 +1,15 @@
-import React from "react";
+import React, { useRef } from "react";
 import "./Projects.css";
 import petComassImage from "./Photos/petCompass.png";
 import aromasHavenImage from "./Photos/aromasHaven.png";
 import iotAgricultureImage from "./Photos/IotAgriculture.png";
 import platePaletteImage from "./Photos/platePalette.png";
 import gemicon from "./Photos/google-gemini-icon.svg";
+import Slider from "react-slick";
+
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
 const Projects = () => {
   const aromasHaven = {
     name: "Aromas Haven",
@@ -34,7 +39,7 @@ const Projects = () => {
     keyPoints: ["Admin Dashboard", "Payment Gateway"],
     github: "https://github.com/munirsiddiqui54/AromasHaven",
     visit: "https://aromas-haven.vercel.app/",
-    youtube: "https://youtu.be/MQbftC2EqmU?si=we_TeKxHJet_N--o",
+    // youtube: "https://youtu.be/MQbftC2EqmU?si=we_TeKxHJet_N--o",
   };
   const petCompass = {
     name: "Pet Compass",
@@ -131,6 +136,61 @@ const Projects = () => {
     visit: "https://munirsiddiqui54.github.io/recipe-S/",
   };
 
+  let sliderRef = useRef(null);
+  const play = () => {
+    sliderRef.slickPlay();
+  };
+  const pause = () => {
+    sliderRef.slickPause();
+  };
+
+  var settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    initialSlide: 0,
+    autoplay: true,
+    autoplaySpeed: 4000,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          initialSlide: 2,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+    appendDots: (dots) => (
+      <div
+        style={{
+          borderRadius: "20px",
+          padding: "10px",
+        }}
+      >
+        <ul style={{ margin: "0px" }}> {dots} </ul>
+      </div>
+    ),
+  };
+
   const list = [iotAgriculture, petCompass, aromasHaven, platePalette];
 
   return (
@@ -144,18 +204,18 @@ const Projects = () => {
           Projects I have <span className="gradtext">previously</span> worked on
         </h2>
 
-        <div
+        {/* <div
           className="d-flex"
           style={{
             alignItems: "stretch",
             justifyContent: "center",
-            flexWrap: "wrap",
           }}
-        >
+        > */}
+        <Slider ref={(slider) => (sliderRef = slider)} {...settings}>
           {list.map((item) => (
             <div
-              class="card d-flex p-1 m-1"
-              style={{ justifyContent: "start" }}
+              class="card d-flex p-1"
+              style={{ justifyContent: "start", height: "100%" }}
             >
               <img
                 style={{
@@ -263,8 +323,9 @@ const Projects = () => {
               </div>
             </div>
           ))}
-        </div>
+        </Slider>
       </div>
+      {/* </div> */}
     </div>
   );
 };

@@ -43,7 +43,7 @@ const about = () => {
               className="d-flex"
               style={{ justifyContent: "center", alignItems: "center" }}
             >
-              <h2 style={{ textAlign: "end" }}>8+</h2>
+              <h2 style={{ textAlign: "end" }}>7+</h2>
               <span>Deployed projects</span>
             </div>
           </div>

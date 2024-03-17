@@ -2,7 +2,11 @@ import React from "react";
 import "./Social.css";
 
 const Social = (props) => {
-  const flexDirection = props.align === 1 ? "row" : "column";
+  let flexDirection = props.align === 1 ? "row" : "column";
+  if (window.innerWidth <= 768) {
+    flexDirection = "row";
+  }
+
   const mar = props.align === 1 ? "0px" : "10px";
   return (
     <>

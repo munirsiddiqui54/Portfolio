@@ -32,7 +32,8 @@ const Hero = () => {
   }, [index]);
   return (
     <div style={{ position: "relative" }}>
-      <Social />
+      {window.innerWidth <= 768 ? "" : <Social />}
+
       <main className="container hero">
         {/* <div
           class="bubble m-0"
@@ -115,6 +116,7 @@ const Hero = () => {
           </button>
         </div>
       </main>
+      {window.innerWidth <= 768 ? <Social /> : ""}
 
       {/* <div
         class="custom-shape-divider-bottom-1707313518"

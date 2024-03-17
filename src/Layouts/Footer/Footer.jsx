@@ -8,7 +8,7 @@ const Footer = () => {
 
     <div className="footer py-3">
       <div
-        className="d-flex container mt-3"
+        className="d-flex footer-body container mt-3"
         style={{ justifyContent: "space-between" }}
       >
         <div className="profile">
@@ -21,6 +21,7 @@ const Footer = () => {
         </div>
         <div>
           <h3>Get in Touch</h3>
+          <h2>//add email, name, phone no.</h2>
         </div>
       </div>
       <div className="credits container">

@@ -43,7 +43,7 @@
     /* Styles for phones */
     .contact h2{
         font-size: 25px;
-        font-weight: 500;
+        /* font-weight: 500; */
     }
     .contact h5{
         font-size: 16px;

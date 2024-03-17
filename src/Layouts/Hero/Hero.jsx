@@ -5,8 +5,8 @@ import Social from "../Social/Social";
 const Hero = () => {
   const greetings = [
     "Hey",
+    "ٱلسَّلَامُ عَلَيْكُمْ",
     "नमस्कार",
-    "مرحبًا",
     "Namaste",
     "Hola",
     "Bonjour",
@@ -102,7 +102,7 @@ const Hero = () => {
             width: "100%",
           }}
         >
-          <button className="btn" id="btn1">
+          <button className="mybtn btn" id="btn1">
             <a
               href="#contact"
               style={{ color: "white", textDecoration: "none" }}
@@ -110,7 +110,7 @@ const Hero = () => {
               Contact me
             </a>
           </button>
-          <button className="btn" id="btn2">
+          <button className="mybtn btn" id="btn2">
             Download Resume
           </button>
         </div>

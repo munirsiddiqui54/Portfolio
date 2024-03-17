@@ -65,9 +65,9 @@ function App() {
       {/* <Header /> */}
   
       <Hero />
+      <Projects/>
       <About />
       <Skills/>
-      <Projects/>
       <Contact/>
       <Footer/>
       <div

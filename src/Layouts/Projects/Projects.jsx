@@ -194,7 +194,7 @@ const Projects = () => {
   const list = [iotAgriculture, petCompass, aromasHaven, platePalette];
 
   return (
-    <div className=" projects py-5">
+    <div className=" projects py-5 my-5" id="projects">
       <div className="container">
         <span className="d-flex">
           <h5 className="gradtext mx-2">/</h5>

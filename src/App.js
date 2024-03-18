@@ -58,11 +58,28 @@ function App() {
     };
   }, []);
 
+  const show=()=>{
+    document.getElementById("menu").style.display="none";
+  }
   
   return (
     <div className="App">
       {/* <Header /> */}
-  
+      <div id='menu'>
+        <div class="swipe-left">
+      
+      <ul className="menu-list">
+        
+      <li className="menu-item" onClick={()=>show()}><a href='#home'>Home</a></li>
+        <li className="menu-item" onClick={()=>show()}><a href='#about'>About Me</a></li>
+        <li className="menu-item" onClick={()=>show()}><a href='#projects'>Projects</a></li>
+        <li className="menu-item" onClick={()=>show()}><a href='#skills'>Skills</a></li>
+        <li className="menu-item" onClick={()=>show()}><a href='#contact'>Contact Me</a></li>
+      </ul>
+ 
+  </div>
+      </div>
+  <Header/>
       <Hero />
       <Projects/>
       <About />

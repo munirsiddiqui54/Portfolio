@@ -5,7 +5,7 @@ import img2 from "../../Photos/blob2.png";
 
 const about = () => {
   return (
-    <div className="about container pb-5">
+    <div className="about container py-5" id="about">
       <span className="d-flex">
         <h5 className="gradtext mx-2">/ </h5>
         <h5> ABOUT ME</h5>

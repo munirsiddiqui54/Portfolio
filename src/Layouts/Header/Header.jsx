@@ -4,15 +4,18 @@ import { CiMenuBurger } from "react-icons/ci";
 import Social from "../Social/Social";
 
 const Header = () => {
+  const showMenu = () => {
+    document.getElementById("menu").style.display = "block";
+  };
   return (
-    <header
-      className="header fluid-container m-3"
-      style={{ position: "relative" }}
-    >
-      <Social />
-      <i class="bi bi-list"></i>
-      <CiMenuBurger style={{ color: "white" }} />
-      {/* <button class="button">Resume</button> */}
+    <header className="header fluid-container p-3" style={{}}>
+      <p className="m-0" style={{ fontWeight: "700", fontSize: "22px" }}>
+        Munir
+      </p>
+      <CiMenuBurger
+        style={{ color: "white", cursor: "pointer", fontSize: "25px" }}
+        onClick={() => showMenu()}
+      />
     </header>
   );
 };

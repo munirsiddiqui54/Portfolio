@@ -31,10 +31,10 @@ const Hero = () => {
     };
   }, [index]);
   return (
-    <div style={{ position: "relative" }}>
+    <div className="my-5" style={{ position: "relative" }} id="home">
       {window.innerWidth <= 768 ? "" : <Social />}
 
-      <main className="container hero">
+      <main className="container hero py-3">
         {/* <div
           class="bubble m-0"
           style={{ position: "absolute", right: "100px" }}

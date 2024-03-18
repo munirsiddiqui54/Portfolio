@@ -86,7 +86,7 @@ const Skills = () => {
 
   return (
     <>
-      <div className="skills container my-5">
+      <div className="skills container my-5 py-5" id="skills">
         <span className="d-flex">
           <h5 className="gradtext mx-2">/ </h5>
           <h5> MY SKILLS</h5>

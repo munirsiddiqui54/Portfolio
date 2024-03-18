@@ -11,7 +11,7 @@ const Social = (props) => {
   return (
     <>
       <div
-        className={`d-flex social main mt-2 `}
+        className={`d-flex social main mt-4 `}
         id="social"
         style={{ flexDirection: flexDirection, marginLeft: mar }}
       >

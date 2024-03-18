@@ -3,7 +3,7 @@ import "./Contact.css";
 
 const Contact = (contact) => {
   return (
-    <div className="pb-5" style={{ position: "relative" }}>
+    <div className="py-5 my-3" style={{ position: "relative" }}>
       <div className="contact py-5" id="contact">
         <div className="container">
           <span className="d-flex">

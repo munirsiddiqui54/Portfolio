@@ -9,6 +9,7 @@ import Skills from './Layouts/Skills/Skills';
 import Projects from './Layouts/Projects/Projects';
 import Contact from './Layouts/Contact/Contact';
 import Footer from './Layouts/Footer/Footer';
+import { Toaster } from 'react-hot-toast';
 function App() {
   const mouseFollower = useRef();
 
@@ -64,6 +65,7 @@ function App() {
   
   return (
     <div className="App">
+      <Toaster/>
       {/* <Header /> */}
       <div id='menu'>
         <div class="swipe-left">

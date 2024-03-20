@@ -23,7 +23,13 @@ const Footer = () => {
               <h3>Munir Siddiqui</h3>
               <p style={{ fontSize: "20px" }}>Software Developer</p>
               <div className="f_social" style={{ display: "flex" }}>
-                <a id="github" href="#">
+                <a
+                  id="github"
+                  href="#"
+                  onClick={() =>
+                    window.open("https://github.com/munirsiddiqui54")
+                  }
+                >
                   <svg
                     viewBox="0 0 16 16"
                     className="bi bi-github"
@@ -36,7 +42,13 @@ const Footer = () => {
                   </svg>
                 </a>
                 &nbsp; &nbsp; &nbsp;
-                <a id="instagram" href="#">
+                <a
+                  id="instagram"
+                  href="#"
+                  onClick={() =>
+                    window.open("https://www.instagram.com/munirsiddiqui_/")
+                  }
+                >
                   <svg
                     viewBox="0 0 16 16"
                     className="bi bi-instagram"
@@ -49,20 +61,31 @@ const Footer = () => {
                   </svg>
                 </a>
                 &nbsp; &nbsp; &nbsp;
-                <a id="facebook" href="#">
+                <a
+                  id="facebook"
+                  href="#"
+                  onClick={() =>
+                    window.open(
+                      "https://www.linkedin.com/in/munir-siddiqui-555744264/"
+                    )
+                  }
+                >
                   <svg
-                    viewBox="0 0 16 16"
-                    className="bi bi-facebook"
-                    fill="currentColor"
+                    viewBox="0 0 448 512"
                     height={16}
                     width={16}
+                    fill="currentColor"
                     xmlns="http://www.w3.org/2000/svg"
                   >
-                    <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+                    <path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"></path>
                   </svg>
                 </a>
                 &nbsp; &nbsp; &nbsp;
-                <a id="twitter" href="#">
+                <a
+                  id="twitter"
+                  href="#"
+                  onClick={() => window.open("https://twitter.com/M1077412")}
+                >
                   <svg
                     viewBox="0 0 16 16"
                     className="bi bi-twitter"

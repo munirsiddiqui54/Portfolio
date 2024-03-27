@@ -30,6 +30,17 @@ const Hero = () => {
       clearInterval(interval);
     };
   }, [index]);
+
+  const handleDownload = () => {
+    const fileUrl = "/Munir-Siddiqui-Resume.pdf";
+    const link = document.createElement("a");
+    link.href = fileUrl;
+    link.setAttribute("download", "munirSiddiqui");
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <div className="my-5" style={{ position: "relative" }} id="home">
       {window.innerWidth <= 768 ? "" : <Social />}
@@ -111,7 +122,7 @@ const Hero = () => {
               Contact me
             </a>
           </button>
-          <button className="mybtn btn" id="btn2">
+          <button className="mybtn btn" id="btn2" onClick={handleDownload}>
             Download Resume
           </button>
         </div>

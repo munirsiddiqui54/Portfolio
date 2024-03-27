@@ -69,7 +69,7 @@ const Projects = () => {
   const iotAgriculture = {
     name: "IOT Agriculture",
     description:
-      "This is random description of Project is some 3-4 lines which will be stored in jsd ahihdiuhkdjbkj dh gwfu ghuifywehiowhjh",
+      "An Android app fetches data from a real-time database where information is posted using an ESP32 with sensors reading soil properties. It includes an ML model to recommend suitable crops for the field. Additionally, a Gemini chatbot is integrated to assist farmers with their queries.",
     photo: iotAgricultureImage,
     date: "Mar 2024",
     status: "Completed",
@@ -102,8 +102,6 @@ const Projects = () => {
         skill: "Gemini",
         img: gemicon,
       },
-      //flask
-      //gemini
       //ml prediction: python,jupyternb
     ],
     keyPoints: ["Admin Dashboard", "Payment Gateway"],

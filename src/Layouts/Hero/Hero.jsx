@@ -32,7 +32,7 @@ const Hero = () => {
   }, [index]);
 
   const handleDownload = () => {
-    const fileUrl = "/Munir-Siddiqui-Resume.pdf";
+    const fileUrl = "/Munir's resume.pdf";
     const link = document.createElement("a");
     link.href = fileUrl;
     link.setAttribute("download", "munirSiddiqui");

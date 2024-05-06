@@ -86,6 +86,7 @@ const Social = (props) => {
           onClick={() =>
             window.open("https://www.linkedin.com/in/munir-siddiqui-555744264/")
           }
+          
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"

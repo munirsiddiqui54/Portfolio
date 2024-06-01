@@ -6,11 +6,51 @@ import iotAgricultureImage from "./Photos/IotAgriculture.png";
 import platePaletteImage from "./Photos/platePalette.png";
 import gemicon from "./Photos/google-gemini-icon.svg";
 import Slider from "react-slick";
+import marksPhoto from "./Photos/marks.jpeg";
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 const Projects = () => {
+  const studentsMarks = {
+    name: "Marks Prediction",
+    description:
+      "This project is an end-to-end data science application aimed at predicting students' scores based on various demographic and educational features. The project leverages machine learning techniques and follows industry best practices, including structured folder organization, custom loggers, and custom exception handling.",
+    photo: marksPhoto,
+    date: "May 2024",
+    status: "On-going",
+    stack: [
+      {
+        skill: "Python",
+        img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
+      },
+      {
+        skill: "scikit-learn",
+        img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/scikitlearn/scikitlearn-original.svg",
+      },
+      {
+        skill: "Pandas",
+        img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg",
+      },
+      {
+        skill: "NumPy",
+        // icons/numpy/numpy-original.svg
+        img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg",
+      },
+      {
+        skill: "Jupyter Notebook",
+        img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jupyter/jupyter-original.svg",
+      },
+      {
+        skill: "Flask",
+        img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg",
+      },
+    ],
+    keyPoints: ["Model Training", "Data Processing"],
+    visit: "https://mlproject-cevz.onrender.com/",
+    github: "https://github.com/munirsiddiqui54/MLProject",
+  };
+
   const aromasHaven = {
     name: "Aromas Haven",
     description:
@@ -189,7 +229,13 @@ const Projects = () => {
     ),
   };
 
-  const list = [iotAgriculture, petCompass, aromasHaven, platePalette];
+  const list = [
+    studentsMarks,
+    iotAgriculture,
+    petCompass,
+    aromasHaven,
+    platePalette,
+  ];
 
   return (
     <div className=" projects py-5 my-5" id="projects">

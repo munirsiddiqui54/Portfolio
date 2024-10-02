@@ -2,6 +2,7 @@ import React, { useRef } from "react";
 import "./Projects.css";
 import petComassImage from "./Photos/petCompass.png";
 import aromasHavenImage from "./Photos/aromasHaven.png";
+import aura from "./Photos/aura.png";
 import iotAgricultureImage from "./Photos/IotAgriculture.png";
 import platePaletteImage from "./Photos/platePalette.png";
 import gemicon from "./Photos/google-gemini-icon.svg";
@@ -18,7 +19,7 @@ const Projects = () => {
       "This project is an end-to-end data science application aimed at predicting students' scores based on various demographic and educational features. The project leverages machine learning techniques and follows industry best practices, including structured folder organization, custom loggers, and custom exception handling.",
     photo: marksPhoto,
     date: "May 2024",
-    status: "On-going",
+    status: "Completed",
     stack: [
       {
         skill: "Python",
@@ -106,6 +107,31 @@ const Projects = () => {
     github: "https://github.com/munirsiddiqui54/PetCompass",
     youtube: "https://youtu.be/MQbftC2EqmU?si=we_TeKxHJet_N--o",
   };
+  const auraMat = {
+    name: "Aura- AI powered Mat",
+    description:
+      "The project significantly enhances traditional yoga practices by providing personalized, real-time feedback and guidance through the integration of AI and smartwatches.  This innovative approach enriches the user experience and improves health monitoring during yoga sessions, making yoga more interactive, effective, and tailored to individual needs.",
+    photo: aura,
+    date: "Aug 2024-Sept 2024",
+    status: "Completed",
+    stack: [
+      {
+        skill: "React Native",
+        img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+      },
+      {
+        skill: "Gemini",
+        img: gemicon,
+      },
+      {
+        skill: "Firebase",
+        img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-original.svg",
+      },
+    ],
+    keyPoints: ["Admin Dashboard", "Payment Gateway"],
+    github: "https://github.com/munirsiddiqui54/Ai-YogaMat",
+    youtube: "https://youtu.be/-8zDv2EXZKo?feature=shared",
+  };
   const iotAgriculture = {
     name: "IOT Agriculture",
     description:
@@ -184,13 +210,13 @@ const Projects = () => {
 
   var settings = {
     dots: true,
-    infinite: true,
+    infinite: false,
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
     initialSlide: 0,
     autoplay: true,
-    autoplaySpeed: 4000,
+    autoplaySpeed: 9000,
     responsive: [
       {
         breakpoint: 1024,
@@ -230,6 +256,7 @@ const Projects = () => {
   };
 
   const list = [
+    auraMat,
     studentsMarks,
     iotAgriculture,
     petCompass,
@@ -248,18 +275,11 @@ const Projects = () => {
           Projects I have <span className="gradtext">previously</span> worked on
         </h2>
 
-        {/* <div
-          className="d-flex"
-          style={{
-            alignItems: "stretch",
-            justifyContent: "center",
-          }}
-        > */}
         <Slider ref={(slider) => (sliderRef = slider)} {...settings}>
           {list.map((item) => (
             <div
               class="card d-flex p-1"
-              style={{ justifyContent: "start", height: "100%" }}
+              style={{ justifyContent: "start", flex: 1, height: "100%" }}
             >
               <img
                 style={{
@@ -369,6 +389,7 @@ const Projects = () => {
           ))}
         </Slider>
       </div>
+
       {/* </div> */}
     </div>
   );

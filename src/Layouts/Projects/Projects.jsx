@@ -8,6 +8,7 @@ import platePaletteImage from "./Photos/platePalette.png";
 import gemicon from "./Photos/google-gemini-icon.svg";
 import Slider from "react-slick";
 import marksPhoto from "./Photos/marks.jpeg";
+import dashboardImage from "./Photos/dashboard.png";
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -199,6 +200,23 @@ const Projects = () => {
     github: "https://github.com/munirsiddiqui54/recipe-S",
     visit: "https://munirsiddiqui54.github.io/recipe-S/",
   };
+  const dashboard = {
+    name: "Flipkart Mobile Price Dashboard",
+    description:
+      "Developed an interactive dashboard to analyze phone data from Flipkart, featuring price comparison, brand popularity, and price distribution insights. Integrated visualizations like scatter plots, pie charts, and density plots, along with correlation and clustering analyses, to explore relationships and group similar products. This tool provides a clear view of price trends, market share, and brand influence, helping users make data-driven decisions.",
+    photo: dashboardImage,
+    date: "Oct 2024",
+    status: "Completed",
+    stack: [
+      {
+        skill: "R programming",
+        img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/r/r-plain.svg",
+      },
+    ],
+    keyPoints: ["Admin Dashboard", "Payment Gateway"],
+    github: "https://github.com/munirsiddiqui54/dashboard",
+    visit: "https://munirsiddiqui.shinyapps.io/mobile/",
+  };
 
   let sliderRef = useRef(null);
   const play = () => {
@@ -256,6 +274,7 @@ const Projects = () => {
   };
 
   const list = [
+    dashboard,
     auraMat,
     studentsMarks,
     iotAgriculture,

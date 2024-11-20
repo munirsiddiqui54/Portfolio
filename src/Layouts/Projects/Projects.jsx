@@ -9,6 +9,7 @@ import gemicon from "./Photos/google-gemini-icon.svg";
 import Slider from "react-slick";
 import marksPhoto from "./Photos/marks.jpeg";
 import dashboardImage from "./Photos/dashboard.png";
+import laksh from "./Photos/laksh.png";
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -217,6 +218,35 @@ const Projects = () => {
     github: "https://github.com/munirsiddiqui54/dashboard",
     visit: "https://munirsiddiqui.shinyapps.io/mobile/",
   };
+  const lakshAi = {
+    name: "Laksh-AI",
+    description:
+      " A career guidance app designed to help users make informed career decisions and achieve their professional goals. 🚀 It offers personalized career recommendations, tailored learning roadmaps, and virtual internships to build relevant skills. Through mentorship, progress tracking, and an AI chatbot 🤖, LakshAI supports users at every step of their career journey. ",
+    photo: laksh,
+    date: "Nov 2024",
+    status: "Near Completion",
+    stack: [
+      {
+        skill: "NextJS",
+        img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-plain.svg",
+      },
+      {
+        skill: "AntDesign",
+        img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/antdesign/antdesign-plain.svg",
+      },
+      {
+        skill: "Firebase",
+        img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-original.svg",
+      },
+      {
+        skill: "Gemini",
+        img: gemicon,
+      },
+    ],
+    keyPoints: ["Admin Dashboard", "Payment Gateway"],
+    github: "https://github.com/munirsiddiqui54/laksh-ai",
+    visit: "https://laksh-ai.vercel.app/",
+  };
 
   let sliderRef = useRef(null);
   const play = () => {
@@ -229,9 +259,9 @@ const Projects = () => {
   var settings = {
     dots: true,
     infinite: false,
-    speed: 500,
+    speed: 700,
     slidesToShow: 3,
-    slidesToScroll: 1,
+    slidesToScroll: 3,
     initialSlide: 0,
     autoplay: true,
     autoplaySpeed: 9000,
@@ -274,6 +304,7 @@ const Projects = () => {
   };
 
   const list = [
+    lakshAi,
     dashboard,
     auraMat,
     studentsMarks,

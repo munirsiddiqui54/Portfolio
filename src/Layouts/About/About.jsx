@@ -1,72 +1,14 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import "./About.css";
 import img from "../../Photos/blob.png";
 import img2 from "../../Photos/blob2.png";
 
 const About = () => {
-  const [s, setS] = useState({ name: "null" });
-  const [userD, setUserDetails] = useState(null);
-  const [err, setError] = useState(null);
-  useEffect(() => {
-    const fetchUserDetails = async () => {
-      try {
-        // Login API call
-        const loginResponse = await fetch(
-          `https://cimple-card.onrender.com/api/user/login`,
-          {
-            method: "POST",
-            headers: {
-              "Content-Type": "application/json",
-            },
-            credentials: "include", // Include cookies in the request
-            body: JSON.stringify({
-              email: "amanu0181@gmail.com",
-              password: "12345",
-            }),
-          }
-        );
-
-        setS(loginResponse);
-        if (!loginResponse.ok) {
-          throw new Error("Failed to login");
-        }
-
-        // User details API call
-        const userDetailsResponse = await fetch(
-          `https://cimple-card.onrender.com/api/user/getdetails`,
-          {
-            method: "GET",
-            headers: {
-              "Content-Type": "application/json",
-            },
-            credentials: "include", // Include cookies in the request
-          }
-        );
-
-        if (!userDetailsResponse.ok) {
-          const errorData = await userDetailsResponse.json();
-          throw new Error(errorData.message || "Failed to fetch user details");
-        }
-
-        const userData = await userDetailsResponse.json();
-        setUserDetails(userData);
-      } catch (err) {
-        setError(err.message);
-        console.error(err.message);
-      }
-    };
-
-    fetchUserDetails();
-  }, []);
-
   return (
     <div className="about container py-5" id="about">
       <span className="d-flex">
         <h5 className="gradtext mx-2">/ </h5>
         <h5> ABOUT ME</h5>
-        Response: {JSON.stringify(s, null, 2)}
-        User: {JSON.stringify(userD, null, 2)}
-        Error: {JSON.stringify(err, null, 2)}
       </span>
       <div className="myabout" style={{ justifyContent: "space-between" }}>
         <div className="abt1" style={{ position: "relative" }}>

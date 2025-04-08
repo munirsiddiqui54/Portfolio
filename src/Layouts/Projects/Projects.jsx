@@ -340,7 +340,6 @@ const Projects = () => {
                 src={item.photo}
                 alt=""
               />
-
               <div
                 className="d-flex m-2"
                 style={{ justifyContent: "space-between" }}

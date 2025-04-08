@@ -4,103 +4,161 @@
 
 /* purple #ca49b4 */
 /* blue #5662ea; */
-.skills h2{
-    font-weight: 700;
-    font-size: 45px;
-    text-align: start;
+/* General Styles */
+
+/* skills.css */
+
+/* Base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.mycard2 .box{
-    background-color: #40404080;
-    align-items: center;
-    border-radius: 10px;
-    font-family: "Poppins";
-    font-size: 20px;
-    font-weight: 600;
-    box-shadow: none;
+body {
+  font-family: 'Arial', sans-serif;
 }
 
+/* Gradient text */
+.gradtext {
+  background: linear-gradient(90deg, #ca49b4, #5662ea);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-weight: bold;
+}
 
-.mycard {
-    width: 300px;
-    background-image: linear-gradient(163deg, #ca49b4 0%, #5662ea 100%);
-    /* box-shadow: 0px 0px 30px 1px #ca49b450; */
-    border-radius: 20px;
-    transition: all .3s;
-   }
-   
-   .mycard2 {
-    width: 300px;
-    background-color: #1a1a1a;
-    border: 2px solid #ee8add9e;
-    border-top: none;
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-    height: 100%;
-    border-radius:10px;
-    transition: all .2s;
-   }
-   
-   .mycard2:hover {
-    transform: scale(0.98);
+/* Skills section */
+.skills {
+  background-color: #000;
+  color: #fff;
+  padding: 3rem 0;
+  margin: 3rem 0;
+}
 
-    border-radius: 20px;
-   }
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
 
-   .mycard2:hover .box{
-        background-color: #80808050;
-        transition: all 2s;
-   }
-   
-   .mycard{
-    box-shadow: 0px 0px 30px 1px #ed94de25;
-   }
-   .mycard2{
-    padding: 5px;
-   }
-   .box img{
-    width: 50px;
-   }
-   .box{
-    margin: 5px;
-    padding: 2px;
-   }
-   @media only screen and (max-width: 768px) {
-    /* Styles for phones */
-    .skills h2{
-        font-size: 30px;
-    }
+.section-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
 
-    .box{
-        margin: 2px;
-        /* margin-left: 2px; */
-       }
-    .box img{
-        width: 35px;
-    }
-    .box p{
-        font-size: 14px;
-        font-weight: 300;
-    }
-    .skills{
-        padding: 0px;
-        width: 100%;
-        margin: 0px;
-    }
-    .skills h5{
-        font-size: 16px;
-    }
-    .skill_container{
-        width: 98%;
-        align-items: end;
-    }
+.section-header h5 {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
 
-    .mycard{
-        width: 45%;
-    }
-    .mycard2{
-        width: 100%;
-        padding: 0px;
-    }
-   }
+.section-title {
+  font-size: 2.2rem;
+  text-align: start;
+  margin-bottom: 2.5rem;
+  font-weight: 700;
+}
+
+/* Category filters */
+.category-filters {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  gap: 10px;
+  margin-bottom: 2.5rem;
+}
+
+.filter-btn {
+  background-color: #1e1e1e;
+  color: #888;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 50px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.filter-btn:hover {
+  background-color: #333;
+  color: #ccc;
+}
+
+.filter-btn.active {
+  background: linear-gradient(90deg, #ca49b4, #5662ea); 
+  color: white;
+  box-shadow: 0 4px 12px rgba(202, 73, 180, 0.3);
+}
+
+/* Skills grid */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 1.5rem;
+}
+
+.skill-card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: linear-gradient(135deg, #1a1a1a, #0f0f0f);
+  padding: 1rem;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(202, 73, 180, 0.2);
+}
+
+.skill-icon {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  /* background: linear-gradient(135deg, #ca49b4, #5662ea); */
+  background-color: #1e1e1e;
+  padding: 8px;
+}
+
+.skill-icon img {
+  width: 24px;
+  height: 24px;
+}
+
+.skill-name {
+  color: #e6e6e6;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .skills-grid {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  }
+  
+  .section-title {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .filter-btn {
+    padding: 6px 12px;
+    font-size: 0.8rem;
+  }
+  
+  .skills-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .skill-card {
+    padding: 0.8rem;
+  }
+}

@@ -11,7 +11,7 @@ const Social = (props) => {
   return (
     <>
       <div
-        className={`d-flex social main mt-4 `}
+        className={`d-flex social main mt-4 mt-5 `}
         id="social"
         style={{ flexDirection: flexDirection, marginLeft: mar }}
       >
@@ -86,7 +86,6 @@ const Social = (props) => {
           onClick={() =>
             window.open("https://www.linkedin.com/in/munir-siddiqui-555744264/")
           }
-          
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
